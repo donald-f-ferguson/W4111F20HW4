@@ -107,12 +107,8 @@ class GotGraph(object):
         return n
 
     def get_related_characters(self, ch_id, r_kind):
+        pass
 
-        t = self.get_character(ch_id.upper())
-        nodes = set()
-        nodes.add(t)
-        n = self._relationship_matcher.match(nodes, r_type=r_kind.upper())
-        return n
 
     def create_character_relationship(self, source_id, target_id, label):
         """

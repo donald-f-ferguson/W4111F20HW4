@@ -1,16 +1,17 @@
 import resources.Characters as C
 import resources.Actors as A
+import json
 
 
 def t0():
 
     res = C.get_character_by_id("CH_283")
-    print("Res = ", process_got_json.dumps(res, indent=3))
+    print("Res = ", json.dumps(res, indent=3))
 
 def t1():
     q1 = {"characterName": "Rickard Karstark"}
     res = C.get_characters_by_query(q1)
-    print("Res = ", process_got_json.dumps(res, indent=3))
+    print("Res = ", json.dumps(res, indent=3))
 
 
 def t2():
